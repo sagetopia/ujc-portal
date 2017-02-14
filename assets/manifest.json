@@ -1,18 +1,8 @@
 {
   "dependencies": {
-    "main.js": {
-      "files": [ "scripts/main.js" ],
-      "main": true
-    },
     "main.css": {
       "files": [ "styles/main.scss" ],
       "main": true
-    },
-    "critical.css": {
-      "files": [ "styles/critical.scss" ]
-    },
-    "fonts": {
-      "bower": ["font-awesome"]
     }
   },
   "config": {
