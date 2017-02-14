@@ -1,0 +1,64 @@
+/******************************************************************
+Site Name: UJA
+Author: Sagetopia
+
+Stylesheet: Variables
+******************************************************************/
+
+$assetpath: 		'/assets';
+$imgpath: 			'/img';
+
+
+/*********************
+FONTS
+*********************/
+
+$roboto:            "roboto";
+$gothic:            "alternate-gothic-no-3-d";
+
+$sans-serif:        "Helvetica Neue", Helvetica, Arial, sans-serif;
+$serif:             "Georgia", Cambria, Times New Roman, Times, serif;
+
+$heading:			$gothic, $sans-serif;
+$body:				$roboto, $sans-serif;
+
+$fa:                "FontAwesome";
+
+// Font sizes
+$base:						16px;
+$small-text:				0.875em;
+$normal-text:				1em;
+$medium-text:				1.125em;
+$large-text:				1.325em;
+
+
+/*********************
+GRID
+*********************/
+$container-width:			1136px;
+$enable-flex:           	true;
+$grid-gutter-width-base:	32px;
+$grid-gutter-width:			$grid-gutter-width-base / 2;
+
+
+/*********************
+COLORS
+*********************/
+
+$white:				#ffffff;
+$light-grey:		#cccccc;
+$grey:				#aaaaaa;
+$black:				#232323;
+
+$blue:				#00a5f4;
+$dark-blue:			#242a37;
+
+$text-color:        $black;
+$border-color:      $dark-blue;
+
+
+/*********************
+EASING
+*********************/
+$ease-out-cube:				cubic-bezier(0.215, 0.61, 0.355, 1);
+$ease-in-out-cube:			cubic-bezier(0.645, 0.045, 0.355, 1);

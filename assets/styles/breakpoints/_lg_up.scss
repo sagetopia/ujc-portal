@@ -1,0 +1,22 @@
+/******************************************************************
+Site Name: UJA
+Author: Sagetopia
+
+Stylesheet: Desktop Stylsheet
+******************************************************************/
+
+@include media-breakpoint-up(lg) {
+
+	/*********************
+	OPTIONS
+	*********************/
+
+	.option {
+		border-left: 1px solid $dark-blue;
+
+		&:first-child {
+			border: none;
+		}
+	}
+
+}

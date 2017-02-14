@@ -1,0 +1,92 @@
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: Button Styles
+
+Buttons are a pretty important part of your site's style, so it's
+important to have a consistent baseline for them. Use this stylesheet
+to create all kinds of buttons.
+
+Helpful Links:
+http://galp.in/blog/2011/08/02/the-ui-guide-part-1-buttons/
+
+******************************************************************/
+
+/*********************
+BUTTON DEFAULTS
+*********************/
+
+%btn {
+  display: inline-block;
+  margin: 1rem 0;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $white;
+  font-size: 0.9em;
+  font-weight: normal;
+  padding: 0.25em 0.5em;
+  border: 0;
+  letter-spacing: 2px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.14s ease-in-out;
+
+  // hovering on the btn
+  &:hover, &:focus {
+    color: $white;
+    text-decoration: none;
+  } // end hover
+
+  // clicking on the button
+  &:active {
+    top: 1px; // adds a tiny hop to the click
+  } // end active
+
+} // end .button
+
+%arrow-after {
+  &:after {
+    font-family: 'fdmu';
+    margin-left: 0.3em;
+    font-size: 0.85em;
+  }
+}
+
+.btn {
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+  transition: background-color 0.2s ease-in-out;
+  @extend %arrow-after;
+
+  &.btn-wrap {
+    white-space: normal;
+  }
+}
+
+.learn-more {
+  font-weight: bold;
+  @extend %arrow-after;
+
+  &.bounce {
+    position: relative;
+    left: 0;
+    transition: color 0.2s, left 0.2s;
+
+    &:after {
+      position: relative;
+      left: 0;
+      transition: left 0.2s;
+    }
+
+    &:hover {
+      left: -3px;
+
+      &:after {
+        left: 6px;
+      }
+    }
+  }
+}

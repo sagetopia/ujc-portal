@@ -1,0 +1,68 @@
+/******************************************************************
+Site Name: UJA
+Author: Sagetopia
+
+Stylesheet: Main Stylesheet
+******************************************************************/
+
+// Sass variables
+@import "partials/variables";
+
+
+// Automatically injected Bower dependencies via wiredep (never manually edit this block)
+// bower:scss
+@import "../../bower_components/bootstrap/scss/bootstrap-grid.scss";
+@import "../../bower_components/bootstrap/scss/mixins/_hover.scss";
+@import "../../bower_components/bootstrap/scss/mixins/_border-radius.scss";
+@import "../../bower_components/bootstrap/scss/_nav.scss";
+@import "../../bower_components/bootstrap/scss/_navbar.scss";
+// endbower
+
+
+/*********************
+IMPORTING PARTIALS
+*********************/
+
+// normalize: http://necolas.github.io/normalize.css/
+@import "partials/normalize";
+
+// typography
+@import "partials/typography";
+
+// Sass functions
+@import "partials/functions";
+
+// import mixins
+@import "partials/mixins";
+
+// import grid
+@import "partials/grid";
+
+
+@import "breakpoints/base";
+@import "breakpoints/sm_up";
+@import "breakpoints/md_up";
+@import "breakpoints/lg_up";
+
+
+/*********************
+RETINA (2x RESOLUTION DEVICES)
+*********************/
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+       only screen and (min--moz-device-pixel-ratio: 1.5),
+       only screen and (min-device-pixel-ratio: 1.5) {
+
+	// styles in 2x.scss
+	@import "breakpoints/2x";
+
+} // end of media query
+
+/*********************
+PRINT STYLESHEET
+*********************/
+@media print {
+
+	// styles in print.scss
+	@import "partials/print";
+
+}

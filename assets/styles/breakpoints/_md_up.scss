@@ -1,0 +1,145 @@
+/******************************************************************
+Site Name: SIR Annual Report 2015
+Author: Sagetopia
+
+Stylesheet: Tablet & Small Desktop Stylesheet
+******************************************************************/
+
+@include media-breakpoint-up(md) {
+
+	a {
+		transition: all 0.2s ease-in-out;
+
+		&:hover, &:active, &:focus {
+			color: darken($blue, 9%);
+		}
+	}
+
+
+	/*********************
+	HEADER
+	*********************/
+
+	label[for="nav-trigger"] {
+		display: none;
+	}
+
+	.site-header {
+		padding: 0;
+		background-color: transparentize($blue, 0.2);
+	  	color: $white;
+	  	@include font-smooth;
+
+	  	.site-logo {
+	  		background-color: $white;
+	  		padding: 2em $grid-gutter-width;
+	  		text-align: center;
+	  	}
+
+	  	.main-nav {
+	  		.nav {
+	  			position: static;
+			    display: flex;
+			    background-color: transparent;
+			    flex-direction: row;
+			    align-items: center;
+			    justify-content: flex-end;
+			    height: 100%;
+
+		  		li {
+		  			opacity: 1;
+		  			transform: none;
+
+		  			a {
+		  				font-size: $normal-text;
+			  			color: $white;
+			  			text-transform: uppercase;
+			  			font-weight: 600;
+
+			  			&:hover {
+			  				color: $light-grey;
+			  			}
+			  		}
+
+		  			&:last-child a {
+		  				padding-right: 0;
+		  			}
+		  		}
+	  		}
+	  	}
+	}
+
+
+	/*********************
+	HEROIC
+	*********************/
+
+	.heroic {
+		padding: 20em 0 15em;
+
+		.curve {
+			height: 150px;
+		}
+	}
+
+
+	/*********************
+	OPTIONS
+	*********************/
+
+	.option {
+		border-left: 1px solid $dark-blue;
+
+		&:first-child {
+			border: none;
+		}
+	}
+
+	.iconbox {
+		padding: 2em;
+	}
+
+
+	/*********************
+	INNER PAGE
+	*********************/
+
+	.inner-page {
+		.heroic {
+			padding: 13em 0 10em;
+
+			.curve {
+				height: 100px;
+			}
+		}
+	}
+
+
+	/*********************
+	FOOTER
+	*********************/
+
+	.site-footer {
+		.footer-nav {
+			.nav {
+				flex-direction: row;
+
+				li {
+					a {
+						border: none;
+					}
+
+					&:first-child a {
+						padding-left: 0;
+					}
+				}
+			}
+		}
+
+		.footer-logo {
+	  		text-align: left;
+	  		order: 2;
+	  	}
+	}
+
+}

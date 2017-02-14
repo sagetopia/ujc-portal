@@ -1,0 +1,12 @@
+/******************************************************************
+Site Name: UJA
+Author: Sagetopia
+
+Stylesheet: Mixins Stylesheet
+******************************************************************/
+
+@mixin font-smooth {
+    font-smooth: always;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 500;
+}

@@ -1,0 +1,78 @@
+/******************************************************************
+Site Name: UJA
+Author: Sagetopia
+
+Stylesheet: Typography
+******************************************************************/
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-size: 90%;
+    font-family: $body;
+    color: $text-color;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+    font-family: $heading;
+    font-weight: 500;
+    letter-spacing: 1px;
+    line-height: 1.2;
+}
+
+h1, .h1 {
+    font-size: 2.25em;
+}
+
+h2, .h2 {
+    font-size: 2em;
+}
+
+h3, .h3 {
+    font-size: 1.75em;
+}
+
+h4, .h4 {
+    font-size: 1.5em;
+}
+
+h5, .h5 {
+    font-size: 1.25em;
+}
+
+h6, .h6 {
+    font-size: 1em
+}
+
+p {
+    font-size: $medium-text;
+    margin: 0 0 1em;
+}
+
+.site-title {
+    font-size: 3.75em;
+    letter-spacing: 4px;
+    margin: 0;
+}
+
+.site-subtitle {
+    margin: 0;
+}
+
+/************************************************************************/
+/*                          MEDIA QUERIES                               */
+/************************************************************************/
+
+@include media-breakpoint-up(sm) {
+
+    body {
+        font-size: 100%;
+    }
+
+    .site-title {
+        font-size: 4.75em;
+    }
+
+}

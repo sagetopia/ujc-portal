@@ -1,0 +1,38 @@
+{
+  "name": "uja-portal",
+  "description": "UJA Portal",
+  "main": "index.js",
+  "authors": [
+    "Sagetopia"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "UJA",
+    "NRMC",
+    "portal"
+  ],
+  "homepage": "portal.nonprofitrisk.org/uja",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~1.x",
+    "bootstrap": "boostrap#v4.0.0-alpha.6"
+  },
+  "overrides": {
+    "bootstrap": {
+      "main": [
+        "scss/bootstrap-grid.scss",
+        "scss/mixins/_hover.scss",
+        "scss/mixins/_border-radius.scss",
+        "scss/_nav.scss",
+        "scss/_navbar.scss"
+      ]
+    }
+  }
+}
