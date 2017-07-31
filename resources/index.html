@@ -94,6 +94,43 @@
 
             <section class="content">
                 <div class="container">
+                    <input type="checkbox" id="topicsselected-1" name="topicsselected-1" value="5" class="checkbox">
+                    <label for="topicsselected-1" class="checkbox-label">Employees &amp; Volunteers</label>
+
+                    <style>
+                        .checkbox {
+                            position: absolute; 
+                            clip: rect(0,0,0,0); 
+                        }
+
+                        .checkbox-label {
+                            position: relative;
+                            padding-left: 1.25em;
+                        }
+                            .checkbox-label:before,
+                            .checkbox-label:after {
+                                content: '';
+                                display: block;
+                                height: 1em;
+                                width: 1em;
+                                position: absolute;
+                                left: 0;
+                                top: 0.2em;
+                                z-index: 1;
+                            }
+
+                            .checkbox-label:before {
+                                border: 1px solid black;
+                                border-radius: 2px;
+                            }
+
+                        .checkbox:checked + .checkbox-label:after {
+                            background: url(/dist/images/checkmark.png) center no-repeat;
+                            background-size: contain;
+                            z-index: 0;
+                        }
+                    </style>
+
                     <ul>
                         <li>This is a test list</li>
                         <li>To see what kind of styling it has</li>
